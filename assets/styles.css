@@ -1,0 +1,225 @@
+/* Root Variables for Color Management */
+:root {
+    --primary-color: #e0f7fa; /* Light Cyan (60%) */
+    --secondary-color: #00bcd4; /* Teal (30%) */
+    --accent-color: #ff4081; /* Bright Pink (10%) */
+    --text-color: #333; /* Dark gray for text */
+    --light-bg-color: #ffffff; /* Light background for contrast */
+}
+
+/* General Styles */
+body {
+    background-color: var(--primary-color); /* 60% Primary Color */
+    color: var(--text-color);
+    line-height: 1.6; /* Improve readability */
+    padding-bottom: 50px; /* Add padding to the bottom of the body */
+}
+
+/* Navbar and Header */
+.navbar {
+    background-color: var(--secondary-color); /* 30% Secondary Color */
+}
+
+/* Style for Navbar Search Button */
+.navbar .form-inline .btn-outline-success {
+    color: var(--light-bg-color); /* Change icon color to white */
+    border-color: var(--light-bg-color); /* Optional: change border color to match icon */
+}
+
+.navbar .form-inline .btn-outline-success:hover {
+    background-color: var(--light-bg-color); /* Change background color on hover for contrast */
+    color: var(--secondary-color); /* Teal color for icon on hover */
+}
+
+/* Ensure input field and button have enough spacing */
+.navbar .form-inline .form-control {
+    margin-right: 5px; /* Adjust space between input and button */
+}
+
+
+
+/* Hero Section Styles */
+.hero-section {
+    background-image: url('./images/Hero1.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 865px;
+    color: var(--light-bg-color); /* Light text on dark background */
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0; /* Increase padding for better separation */
+    margin-bottom: 20px; /* Add margin to separate sections */
+    border-bottom: 2px solid var(--secondary-color); /* Add a divider line */
+}
+
+section:nth-of-type(odd) {
+    background-color: var(--primary-color);
+}
+
+section:nth-of-type(even) {
+    background-color: var(--light-bg-color);
+}
+
+/* Card Header Styles */
+.card-header {
+    background-color: var(--secondary-color); /* 30% Secondary Color */
+    text-align: center;
+    padding: 20px;
+    color: var(--light-bg-color); /* Light text on dark background */
+}
+
+/* Card Image */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Body */
+.card-body {
+    text-align: center;
+}
+
+/* Form Styling */
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Form Labels */
+.form-group label {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--accent-color); /* 10% Accent Color */
+    border-color: var(--accent-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--accent-color), 10%);
+    transform: scale(1.05);
+}
+
+.btn-block {
+    margin-top: 20px;
+    background-color: var(--accent-color); /* Bright button color */
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-block:hover {
+    background-color: darken(var(--accent-color), 10%);
+    transform: scale(1.05);
+}
+
+
+/* Pulse Animation for Button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Contact Section Enhancements */
+#contact {
+    background-color: var(--secondary-color); /* Set distinct background color */
+    padding: 80px 0; /* Extra padding for emphasis */
+    color: var(--light-bg-color); /* Light text color for contrast */
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase shadow for pop */
+}
+
+.card-body {
+    background-color: var(--light-bg-color); /* Light background for cards */
+    color: var(--text-color); /* Standard text color */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--accent-color); /* Accent color for emphasis */
+}
+
+/* Contact Information Styling */
+.container h5 {
+    margin-bottom: 15px;
+}
+
+.container p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Card Styles */
+.card-text {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+/* Divider Line */
+section + section::before {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 2px;
+    margin: 30px auto;
+    background-color: var(--secondary-color); /* Divider color */
+    opacity: 0.7; /* Subtle appearance */
+}
+
+#booking::before {
+    content: none; /* Remove the divider line before this section */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .hero-section {
+        height: 500px; /* Adjust height for smaller screens */
+    }
+
+    .hero-section .btn {
+        font-size: 1.2rem; /* Smaller button size for mobile */
+    }
+}
