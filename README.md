@@ -10,7 +10,6 @@ Welcome to the **Taniti Tourism Website** repository! This project is a responsi
 - [Usage](#usage)
 - [Feedback and Improvements](#feedback-and-improvements)
 - [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Demo
@@ -66,14 +65,9 @@ Contributions are welcome! If you would like to contribute to the project, pleas
 4. Push to the branch (`git push origin feature/your-feature-name`).
 5. Open a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
 If you have any questions or feedback, feel free to reach out:
 
-- **Your Name** - [your.email@example.com](mailto:your.email@example.com)
-- [Your GitHub Profile](https://github.com/yourusername)
+- **Omar Daghestani** - [odaghest7@gmail.com](mailto:odaghest7@gmail.com)
 
