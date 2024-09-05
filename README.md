@@ -14,7 +14,7 @@ Welcome to the **Taniti Tourism Website** repository! This project is a responsi
 
 ## Demo
 
-You can view the live demo of the website [here](https://omardgreat.github.io/Taniti/?#home). *(Include the link to the live demo of your website if available)*
+You can view the live demo of the website [here](https://omardgreat.github.io/Taniti). *(Include the link to the live demo of your website if available)*
 
 ## Features
 
