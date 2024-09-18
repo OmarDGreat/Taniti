@@ -77,7 +77,7 @@
                         <img src="assets/images/hotel.jpg" class="card-img-top" alt="Exterior view of a hotel in Taniti">
                         <div class="card-body">
                             <p class="card-text">A brief description of the hotels available on the island.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#hotelModal">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                         <img src="assets/images/bedandbreakfast.jpg" class="card-img-top" alt="Bed and Breakfast in Taniti">
                         <div class="card-body">
                             <p class="card-text">A brief description of the bed and breakfast options.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#bnbModal">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -103,12 +103,73 @@
                         <img src="assets/images/condo.jpg" class="card-img-top" alt="Private condo available for stay in Taniti">
                         <div class="card-body">
                             <p class="card-text">A brief description of private condos available on the island.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#condoModal">View Details</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Modals for Accommodations -->
+<!-- Hotel Modal -->
+<div class="modal fade" id="hotelModal" tabindex="-1" aria-labelledby="hotelModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="hotelModalLabel">Hotel Accommodation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Our hotel options provide luxury and comfort with stunning island views. Choose from a variety of rooms and enjoy world-class service.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bed & Breakfast Modal -->
+  <div class="modal fade" id="bnbModal" tabindex="-1" aria-labelledby="bnbModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bnbModalLabel">Bed & Breakfast Accommodation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Experience the local charm and hospitality with our Bed & Breakfast options. Enjoy cozy accommodations and a hearty breakfast to start your day.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Private Condo Modal -->
+  <div class="modal fade" id="condoModal" tabindex="-1" aria-labelledby="condoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="condoModalLabel">Private Condo Accommodation</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Stay in a private condo with all the comforts of home, perfect for extended stays and families. Enjoy full kitchen facilities and more.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <!-- Activities Section -->
         <section id="activities" class="container my-5">
@@ -123,7 +184,7 @@
                         <img src="assets/images/beach.jpg" class="card-img-top" alt="Sunny beach with umbrellas in Taniti">
                         <div class="card-body">
                             <p class="card-text">Explore the beautiful beaches of Taniti.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#beachModal">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -136,7 +197,7 @@
                         <img src="assets/images/rainforest.jpg" class="card-img-top" alt="Rainforest with dense trees in Taniti">
                         <div class="card-body">
                             <p class="card-text">Take guided tours through lush rainforests!</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#rainforestModal">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +210,7 @@
                         <img src="assets/images/volcano.jpg" class="card-img-top" alt="Active volcano in Taniti">
                         <div class="card-body">
                             <p class="card-text">Visit the active volcano and learn about its history.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#volcanoModal">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -194,15 +255,21 @@
                     </select>
                 </div>
 
-                <!-- Activities Selection -->
+                <!-- Activities Selection (Checkboxes) -->
                 <div class="form-group">
-                    <label for="activitiesSelection">Select Activities:</label>
-                    <select multiple class="form-control" id="activitiesSelection" aria-describedby="activitiesHelp">
-                        <option>Beach Visit</option>
-                        <option>Rainforest Tour</option>
-                        <option>Volcano Visit</option>
-                    </select>
-                    <small id="activitiesHelp" class="form-text text-muted">Hold down the Ctrl (Windows) or Command (Mac) button to select multiple activities.</small>
+                    <label for="activitiesSelection">Select Activities:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="beachVisit" value="Beach Visit">
+                        <label class="form-check-label" for="beachVisit">Beach Visit</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="rainforestTour" value="Rainforest Tour">
+                        <label class="form-check-label" for="rainforestTour">Rainforest Tour</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="volcanoVisit" value="Volcano Visit">
+                        <label class="form-check-label" for="volcanoVisit">Volcano Visit</label>
+                    </div>
                 </div>
 
                 <!-- Submit Button -->
@@ -253,6 +320,101 @@
         </section>
 
     </main>
+
+    <!-- Modals for Activities -->
+    <!-- Beach Modal -->
+    <div class="modal fade" id="beachModal" tabindex="-1" aria-labelledby="beachModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="beachModalLabel">Beach Visit</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Enjoy a day on the pristine beaches of Taniti with white sand and crystal-clear waters.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rainforest Modal -->
+    <div class="modal fade" id="rainforestModal" tabindex="-1" aria-labelledby="rainforestModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rainforestModalLabel">Rainforest Tour</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Explore the lush rainforests with a guided tour, learning about unique wildlife and plants.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Volcano Modal -->
+    <div class="modal fade" id="volcanoModal" tabindex="-1" aria-labelledby="volcanoModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="volcanoModalLabel">Volcano Visit</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Visit an active volcano and discover the geological wonders that shape Taniti's landscape.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+                <h5>About Taniti Tourism</h5>
+                <p id="white">Discover the beauty of Taniti Island. We offer the best accommodations, activities, and attractions for a perfect tropical getaway.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#accommodations" class="text-white">Accommodations</a></li>
+                    <li><a href="#activities" class="text-white">Activities</a></li>
+                    <li><a href="#booking" class="text-white">Booking</a></li>
+                    <li><a href="#contact" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Taniti Blvd, Taniti Island</p>
+                <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+                <p><i class="fas fa-envelope"></i> info@tanititourism.com</p>
+            </div>
+        </div>
+        <div class="mt-3">
+            <p>&copy; 2024 Taniti Tourism. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>

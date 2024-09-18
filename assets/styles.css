@@ -12,8 +12,60 @@ body {
     background-color: var(--primary-color); /* 60% Primary Color */
     color: var(--text-color);
     line-height: 1.6; /* Improve readability */
-    padding-bottom: 50px; /* Add padding to the bottom of the body */
+    
 }
+
+/* Add fixed position to navbar */
+.navbar {
+    background-color: var(--secondary-color); /* 30% Secondary Color */
+    position: fixed;
+    width: 100%;
+    height: 9vh;
+    z-index: 10;
+    top: 0;
+}
+
+/* Add padding to avoid overlap with fixed navbar */
+main {
+    padding-top: 80px; /* Adjust this value based on navbar height */
+}
+
+/* Footer styling */
+/* Footer Styles */
+footer {
+    background-color: var(--secondary-color); /* Footer background color */
+    color: var(--light-bg-color); /* Light text color */
+    height: 30vh;
+}
+
+footer a {
+    color: var(--light-bg-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--accent-color); /* Change color on hover */
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0;
+    color: var(--light-bg-color);
+}
+
+/* Styles for icons in footer */
+footer p i {
+    color: var(--accent-color); /* Change icon color */
+    margin-right: 5px; /* Add spacing between the icon and text */
+}
+
+footer h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: var(--light-bg-color); /* Light text color for headings */
+}
+
+
 
 /* Navbar and Header */
 .navbar {
@@ -177,7 +229,7 @@ form {
     margin-bottom: 15px;
 }
 
-.container p {
+.container p:not(footer p) {
     margin-bottom: 10px;
     font-size: 16px;
     color: var(--text-color);
