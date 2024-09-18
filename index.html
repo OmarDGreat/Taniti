@@ -1,424 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the best accommodations, activities, and attractions on Taniti Island. Plan your perfect tropical getaway today!">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best accommodations, activities, and attractions on Taniti Island. Plan your perfect tropical getaway today!"
+    />
     <title>Taniti Tourism</title>
     <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
     <!-- Custom CSS -->
-    <link href="assets/styles.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet" />
     <style>
       html {
         scroll-behavior: smooth;
       }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-            <a class="navbar-brand" href="#home" aria-label="Home">
-                <i class="fas fa-home"></i>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#home" aria-label="Home">
+          <i class="fas fa-home"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#accommodations">Accommodations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#activities">Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#booking">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form 
+          class="form-inline" 
+          aria-label="Search Form"
+          >
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              <i class="fas fa-search"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#accommodations">Accommodations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#activities">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#booking">Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <form class="form-inline" aria-label="Search Form">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                </form>
-            </div>
-        </nav>
+          </form>
+        </div>
+      </nav>
     </header>
 
     <!-- Main Content -->
     <main>
+      <!-- Home Section -->
+      <section id="home" class="hero-section">
+        <div class="overlay"></div>
+        <div
+          class="container d-flex h-100 align-items-center justify-content-center position-relative"
+        >
+          <div class="text-center">
+            <a href="#accommodations" class="btn btn-primary btn-lg btn-pulse"
+              >Explore Taniti</a
+            >
+          </div>
+        </div>
+      </section>
 
-        <!-- Home Section -->
-        <section id="home" class="hero-section">
-            <div class="overlay"></div>
-            <div class="container d-flex h-100 align-items-center justify-content-center position-relative">
-                <div class="text-center">
-                    <a href="#accommodations" class="btn btn-primary btn-lg btn-pulse">Explore Taniti</a>
-                </div>
+      <!-- Accommodations Section -->
+      <section id="accommodations" class="container my-5">
+        <h1 class="text-center mb-4">Accommodations</h1>
+        <div class="row text-center">
+          <!-- Hotel Card -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <i class="fas fa-hotel fa-2x"></i>
+              </div>
+              <img
+                src="assets/images/hotel.jpg"
+                class="card-img-top"
+                alt="Exterior view of a hotel in Taniti"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  A brief description of the hotels available on the island.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#hotelModal"
+                  >View Details</a
+                >
+              </div>
             </div>
-        </section>
-
-        <!-- Accommodations Section -->
-        <section id="accommodations" class="container my-5">
-            <h1 class="text-center mb-4">Accommodations</h1>
-            <div class="row text-center">
-                <!-- Hotel Card -->
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <i class="fas fa-hotel fa-2x"></i>
-                        </div>
-                        <img src="assets/images/hotel.jpg" class="card-img-top" alt="Exterior view of a hotel in Taniti">
-                        <div class="card-body">
-                            <p class="card-text">A brief description of the hotels available on the island.</p>
-                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#hotelModal">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bed & Breakfast Card -->
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <i class="fas fa-coffee fa-2x"></i>
-                        </div>
-                        <img src="assets/images/bedandbreakfast.jpg" class="card-img-top" alt="Bed and Breakfast in Taniti">
-                        <div class="card-body">
-                            <p class="card-text">A brief description of the bed and breakfast options.</p>
-                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#bnbModal">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Private Condo Card -->
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <i class="fas fa-building fa-2x"></i>
-                        </div>
-                        <img src="assets/images/condo.jpg" class="card-img-top" alt="Private condo available for stay in Taniti">
-                        <div class="card-body">
-                            <p class="card-text">A brief description of private condos available on the island.</p>
-                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#condoModal">View Details</a>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <!-- Bed & Breakfast Card -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <i class="fas fa-coffee fa-2x"></i>
+              </div>
+              <img
+                src="assets/images/bedandbreakfast.jpg"
+                class="card-img-top"
+                alt="Bed and Breakfast in Taniti"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  A brief description of the bed and breakfast options.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#bnbModal"
+                  >View Details</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+          <!-- Private Condo Card -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <i class="fas fa-building fa-2x"></i>
+              </div>
+              <img
+                src="assets/images/condo.jpg"
+                class="card-img-top"
+                alt="Private condo available for stay in Taniti"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  A brief description of private condos available on the island.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#condoModal"
+                  >View Details</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Modals for Accommodations -->
-<!-- Hotel Modal -->
-<div class="modal fade" id="hotelModal" tabindex="-1" aria-labelledby="hotelModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="hotelModalLabel">Hotel Accommodation</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+      <!-- Activities Section -->
+      <section id="activities" class="container my-5">
+        <h2 class="text-center mb-4">Activities</h2>
+        <div class="row text-center">
+          <!-- Beach Activity -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <i class="fas fa-umbrella-beach fa-2x"></i>
+              </div>
+              <img
+                src="assets/images/beach.jpg"
+                class="card-img-top"
+                alt="Sunny beach with umbrellas in Taniti"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Explore the beautiful beaches of Taniti.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#beachModal"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Rainforest Activity -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <i class="fas fa-tree fa-2x"></i>
+              </div>
+              <img
+                src="assets/images/rainforest.jpg"
+                class="card-img-top"
+                alt="Rainforest with dense trees in Taniti"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Take guided tours through lush rainforests!
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#rainforestModal"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Volcano Activity -->
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <i class="fas fa-mountain fa-2x"></i>
+              </div>
+              <img
+                src="assets/images/volcano.jpg"
+                class="card-img-top"
+                alt="Active volcano in Taniti"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Visit the active volcano and learn about its history.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#volcanoModal"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking Section -->
+      <section id="booking" class="container my-5">
+        <h2 class="text-center mb-4">Book Your Stay and Activities</h2>
+        <form
+          aria-label="Booking Form"
+          onsubmit="return submitForm(event, 'Booking Form')"
+        >
+          <!-- Accommodation Type -->
+          <div class="form-group">
+            <label for="accommodationType">Select Accommodation Type:</label>
+            <select
+              class="form-control"
+              id="accommodationType"
+              aria-labelledby="accommodationType"
+            >
+              <option>Hotel</option>
+              <option>Bed & Breakfast</option>
+              <option>Private Condo</option>
+            </select>
+          </div>
+
+          <!-- Check-In and Check-Out Dates -->
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="checkInDate">Check-In Date:</label>
+              <input type="date" class="form-control" id="checkInDate" required/>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="checkOutDate">Check-Out Date:</label>
+              <input type="date" class="form-control" id="checkOutDate" required/>
+            </div>
+          </div>
+
+          <!-- Number of Guests -->
+          <div class="form-group">
+            <label for="numberOfGuests">Number of Guests:</label>
+            <select class="form-control" id="numberOfGuests" required>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5+</option>
+            </select>
+          </div>
+
+          <!-- Activities Selection (Checkboxes) -->
+          <div class="form-group">
+            <label for="activitiesSelection">Select Activities:</label><br />
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="beachVisit"
+                value="Beach Visit"
+              />
+              <label class="form-check-label" for="beachVisit"
+                >Beach Visit</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="rainforestTour"
+                value="Rainforest Tour"
+              />
+              <label class="form-check-label" for="rainforestTour"
+                >Rainforest Tour</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="volcanoVisit"
+                value="Volcano Visit" 
+              />
+              <label class="form-check-label" for="volcanoVisit"
+                >Volcano Visit</label
+              >
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary btn-block">
+            Search Availability
           </button>
-        </div>
-        <div class="modal-body">
-          Our hotel options provide luxury and comfort with stunning island views. Choose from a variety of rooms and enjoy world-class service.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Bed & Breakfast Modal -->
-  <div class="modal fade" id="bnbModal" tabindex="-1" aria-labelledby="bnbModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="bnbModalLabel">Bed & Breakfast Accommodation</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Experience the local charm and hospitality with our Bed & Breakfast options. Enjoy cozy accommodations and a hearty breakfast to start your day.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Private Condo Modal -->
-  <div class="modal fade" id="condoModal" tabindex="-1" aria-labelledby="condoModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="condoModalLabel">Private Condo Accommodation</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          Stay in a private condo with all the comforts of home, perfect for extended stays and families. Enjoy full kitchen facilities and more.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
+        </form>
+      </section>
 
-        <!-- Activities Section -->
-        <section id="activities" class="container my-5">
-            <h2 class="text-center mb-4">Activities</h2>
-            <div class="row text-center">
-                <!-- Beach Activity -->
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <i class="fas fa-umbrella-beach fa-2x"></i>
-                        </div>
-                        <img src="assets/images/beach.jpg" class="card-img-top" alt="Sunny beach with umbrellas in Taniti">
-                        <div class="card-body">
-                            <p class="card-text">Explore the beautiful beaches of Taniti.</p>
-                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#beachModal">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Rainforest Activity -->
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <i class="fas fa-tree fa-2x"></i>
-                        </div>
-                        <img src="assets/images/rainforest.jpg" class="card-img-top" alt="Rainforest with dense trees in Taniti">
-                        <div class="card-body">
-                            <p class="card-text">Take guided tours through lush rainforests!</p>
-                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#rainforestModal">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Volcano Activity -->
-                <div class="col-md-4">
-                    <div class="card mb-4 shadow-sm">
-                        <div class="card-header">
-                            <i class="fas fa-mountain fa-2x"></i>
-                        </div>
-                        <img src="assets/images/volcano.jpg" class="card-img-top" alt="Active volcano in Taniti">
-                        <div class="card-body">
-                            <p class="card-text">Visit the active volcano and learn about its history.</p>
-                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#volcanoModal">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+      <!-- Contact Section -->
+      <section id="contact" class="container my-5">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <div class="row justify-content-center">
+          <!-- Contact Information Card -->
+          <div class="col-md-5 mb-4">
+            <div class="card shadow-sm">
+              <div class="card-body text-center">
+                <h5 class="card-title">Contact Information</h5>
+                <p class="card-text">
+                  <i class="fas fa-map-marker-alt"></i> 123 Taniti Blvd, Taniti
+                  Island
+                </p>
+                <p class="card-text">
+                  <i class="fas fa-phone"></i> +1 (234) 567-8900
+                </p>
+                <p class="card-text">
+                  <i class="fas fa-envelope"></i> info@tanititourism.com
+                </p>
+                <p class="card-text">
+                  <i class="fas fa-clock"></i> Mon - Fri: 9:00 AM - 6:00 PM
+                </p>
+              </div>
             </div>
-        </section>
-
-        <!-- Booking Section -->
-        <section id="booking" class="container my-5">
-            <h2 class="text-center mb-4">Book Your Stay and Activities</h2>
-            <form aria-label="Booking Form">
-                <!-- Accommodation Type -->
-                <div class="form-group">
-                    <label for="accommodationType">Select Accommodation Type:</label>
-                    <select class="form-control" id="accommodationType" aria-labelledby="accommodationType">
-                        <option>Hotel</option>
-                        <option>Bed & Breakfast</option>
-                        <option>Private Condo</option>
-                    </select>
-                </div>
-
-                <!-- Check-In and Check-Out Dates -->
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="checkInDate">Check-In Date:</label>
-                        <input type="date" class="form-control" id="checkInDate">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="checkOutDate">Check-Out Date:</label>
-                        <input type="date" class="form-control" id="checkOutDate">
-                    </div>
-                </div>
-
-                <!-- Number of Guests -->
-                <div class="form-group">
-                    <label for="numberOfGuests">Number of Guests:</label>
-                    <select class="form-control" id="numberOfGuests">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5+</option>
-                    </select>
-                </div>
-
-                <!-- Activities Selection (Checkboxes) -->
-                <div class="form-group">
-                    <label for="activitiesSelection">Select Activities:</label><br>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="beachVisit" value="Beach Visit">
-                        <label class="form-check-label" for="beachVisit">Beach Visit</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="rainforestTour" value="Rainforest Tour">
-                        <label class="form-check-label" for="rainforestTour">Rainforest Tour</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="volcanoVisit" value="Volcano Visit">
-                        <label class="form-check-label" for="volcanoVisit">Volcano Visit</label>
-                    </div>
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit" class="btn btn-primary btn-block">Search Availability</button>
-            </form>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="container my-5">
-            <h2 class="text-center mb-5">Contact Us</h2>
-            <div class="row justify-content-center">
-                <!-- Contact Information Card -->
-                <div class="col-md-5 mb-4">
-                    <div class="card shadow-sm">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Contact Information</h5>
-                            <p class="card-text"><i class="fas fa-map-marker-alt"></i> 123 Taniti Blvd, Taniti Island</p>
-                            <p class="card-text"><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
-                            <p class="card-text"><i class="fas fa-envelope"></i> info@tanititourism.com</p>
-                            <p class="card-text"><i class="fas fa-clock"></i> Mon - Fri: 9:00 AM - 6:00 PM</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Contact Form Card -->
-                <div class="col-md-5">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Send Us a Message</h5>
-                            <form aria-label="Contact Form">
-                                <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <!-- Contact Form Card -->
+          <div class="col-md-5">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-center">Send Us a Message</h5>
+                <form 
+                aria-label="Contact Form"
+                onsubmit="return submitForm(event, 'Contact Form')"
+                >
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Enter your name"
+                      required  
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter your email"
+                      required  
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="4"
+                      placeholder="Enter your message"
+                      required  
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!-- Footer Section -->
+      <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+          <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+              <h5>About Taniti Tourism</h5>
+              <p id="white">
+                Discover the beauty of Taniti Island. We offer the best
+                accommodations, activities, and attractions for a perfect
+                tropical getaway.
+              </p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-4">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#accommodations" class="text-white"
+                    >Accommodations</a
+                  >
+                </li>
+                <li><a href="#activities" class="text-white">Activities</a></li>
+                <li><a href="#booking" class="text-white">Booking</a></li>
+                <li><a href="#contact" class="text-white">Contact</a></li>
+              </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-4">
+              <h5>Contact Us</h5>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> 123 Taniti Blvd, Taniti
+                Island
+              </p>
+              <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
+              <p><i class="fas fa-envelope"></i> info@tanititourism.com</p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p>&copy; 2024 Taniti Tourism. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </main>
 
+    <!-- MODALS -->
     <!-- Modals for Activities -->
     <!-- Beach Modal -->
-    <div class="modal fade" id="beachModal" tabindex="-1" aria-labelledby="beachModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="beachModal"
+      tabindex="-1"
+      aria-labelledby="beachModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="beachModalLabel">Beach Visit</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            Enjoy a day on the pristine beaches of Taniti with white sand and crystal-clear waters.
+            Enjoy a day on the pristine beaches of Taniti with white sand and
+            crystal-clear waters.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Rainforest Modal -->
-    <div class="modal fade" id="rainforestModal" tabindex="-1" aria-labelledby="rainforestModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="rainforestModal"
+      tabindex="-1"
+      aria-labelledby="rainforestModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rainforestModalLabel">Rainforest Tour</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <h5 class="modal-title" id="rainforestModalLabel">
+              Rainforest Tour
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            Explore the lush rainforests with a guided tour, learning about unique wildlife and plants.
+            Explore the lush rainforests with a guided tour, learning about
+            unique wildlife and plants.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Volcano Modal -->
-    <div class="modal fade" id="volcanoModal" tabindex="-1" aria-labelledby="volcanoModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="volcanoModal"
+      tabindex="-1"
+      aria-labelledby="volcanoModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="volcanoModalLabel">Volcano Visit</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            Visit an active volcano and discover the geological wonders that shape Taniti's landscape.
+            Visit an active volcano and discover the geological wonders that
+            shape Taniti's landscape.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Footer Section -->
-<footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-        <div class="row">
-            <!-- About Section -->
-            <div class="col-md-4">
-                <h5>About Taniti Tourism</h5>
-                <p id="white">Discover the beauty of Taniti Island. We offer the best accommodations, activities, and attractions for a perfect tropical getaway.</p>
-            </div>
-            <!-- Quick Links -->
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#accommodations" class="text-white">Accommodations</a></li>
-                    <li><a href="#activities" class="text-white">Activities</a></li>
-                    <li><a href="#booking" class="text-white">Booking</a></li>
-                    <li><a href="#contact" class="text-white">Contact</a></li>
-                </ul>
-            </div>
-            <!-- Contact Info -->
-            <div class="col-md-4">
-                <h5>Contact Us</h5>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Taniti Blvd, Taniti Island</p>
-                <p><i class="fas fa-phone"></i> +1 (234) 567-8900</p>
-                <p><i class="fas fa-envelope"></i> info@tanititourism.com</p>
-            </div>
+    <!-- Modals for Accommodations -->
+    <!-- Hotel Modal -->
+    <div
+      class="modal fade"
+      id="hotelModal"
+      tabindex="-1"
+      aria-labelledby="hotelModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="hotelModalLabel">
+              Hotel Accommodation
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Our hotel options provide luxury and comfort with stunning island
+            views. Choose from a variety of rooms and enjoy world-class service.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
-        <div class="mt-3">
-            <p>&copy; 2024 Taniti Tourism. All rights reserved.</p>
-        </div>
+      </div>
     </div>
-</footer>
 
+    <!-- Bed & Breakfast Modal -->
+    <div
+      class="modal fade"
+      id="bnbModal"
+      tabindex="-1"
+      aria-labelledby="bnbModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="bnbModalLabel">
+              Bed & Breakfast Accommodation
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Experience the local charm and hospitality with our Bed & Breakfast
+            options. Enjoy cozy accommodations and a hearty breakfast to start
+            your day.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Private Condo Modal -->
+    <div
+      class="modal fade"
+      id="condoModal"
+      tabindex="-1"
+      aria-labelledby="condoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="condoModalLabel">
+              Private Condo Accommodation
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Stay in a private condo with all the comforts of home, perfect for
+            extended stays and families. Enjoy full kitchen facilities and more.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      defer
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script src="./assets/index.js"></script>
+  </body>
 </html>
